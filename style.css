@@ -1,11 +1,76 @@
+body {
+    margin: 0px;
+}
+
 #container {
-    width: 100%;
-    height: 1250px;
+    overflow: hidden;
     background-color: #cccccc;
 }
 
 .aside {
     width: 300px;
     height: 1250px;
-    background-color: darkgray;
+    float: left;
+    z-index: 1;
+    background-color: #242b2e;
+}
+
+#aside-header {
+    width: 300px;
+    height: 126px;
+    background-color: white;
+    font-family: Soho;
+    font-size: 29px;
+}
+
+#aside-navigation{
+    width: 300px;
+    height: 372px;
+    background-color: #2f373b;
+}
+
+#aside-footer {
+    width: 300px;
+    height: 752px;
+    background-color: #242b2e;
+}
+
+.section {
+    height: 1200px;
+    background-color: white;
+    margin: 25px 25px 25px 325px;
+}
+
+@font-face {
+  font-family: "Soho";
+  src: url("fonts/Soho.woff") format("truetype");
+}
+
+@media screen and (max-width: 750px) {
+    .aside { 
+    float: none;
+    width: auto;
+    height: 300px;
+    }
+
+    #aside-header {
+        width: auto;
+        height: 126px;
+    }
+
+    #aside-navigation {
+        width: auto;
+        height: 87px;
+    }
+
+    #aside-footer {
+        width: auto;
+        height: 87px;
+    }
+
+    .section { 
+    float: none;
+    width: auto;
+    margin: 25px 0px 0px 0px;
+    }
 }
