@@ -16,11 +16,27 @@ body {
 }
 
 #aside-header {
+    overflow: hidden;
     width: 300px;
     height: 126px;
     background-color: white;
+
+}
+
+#aside-header p {
+    text-align: center;
+    top: 30%;
     font-family: Soho;
-    font-size: 29px;
+    font-size: 39px;
+    margin: 0px;
+    z-index: 2;
+    
+}
+
+#aside-header img {
+    position: relative;
+    left: 44%;
+    z-index: 1;
 }
 
 #aside-navigation{
