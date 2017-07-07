@@ -23,19 +23,63 @@ body {
 
 }
 
-#aside-header p {
-    text-align: center;
+#logo {
+    width: 40px;
+    height: 38px;
+    position: relative;
+    margin: 0px;
     top: 30%;
+    left: 30%;
+}
+
+.rectangle-logo {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #e5e5e5;
+    border-radius: 6px;
+    opacity: 0.5;
+    /* Rotate div */
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+
+#one {
+    float: left;
+    left: 2px;
+    top: 2px;
+}
+
+#two {
+    right: 3px;
+    top: 2px;   
+    float: right;
+}
+#three {
+    float: left;
+    left: 10px;
+    top: -6px;
+}
+
+#aside-header #text {
+    width:117px;
+    height: 47px;
+    position: relative;
+    left: 46%;
+    top: -10%;
+    margin: 0px;
     font-family: Soho;
     font-size: 39px;
-    margin: 0px;
-    z-index: 2;
+    z-index: 4;
     
 }
 
-#aside-header img {
+#aside-header #img {
     position: relative;
-    left: 44%;
+    margin: 0px;
+    left: 55%;
+    top: -5%;
     z-index: 1;
 }
 
