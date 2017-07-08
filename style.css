@@ -69,7 +69,7 @@ body {
     left: 46%;
     top: -10%;
     margin: 0px;
-    font-family: Soho;
+    font-family: 'Soho';
     font-size: 39px;
     z-index: 4;
     
@@ -90,7 +90,8 @@ body {
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
+    position: relative;
     margin: 0;
     padding: 0;
     width: 300px;
@@ -98,17 +99,21 @@ ul {
 }
 
 li a {
-    display: block;
-    height: 62px;
     color: white;
+    display: block;
+    font-family: 'Roboto',sans-serif;
+    font-size: 18px;
+    padding: 21px 24px;
+    position: relative;
     text-decoration: none;
     text-align: right;
-    border: 1px solid #242b2e;
+    z-index: 99999;
 }
 
 li a:hover {
     background-color: #1ab5b3;
     color: white;
+    transition: all 0.15s linear 0s;
 }
 
 #aside-footer {
@@ -126,6 +131,10 @@ li a:hover {
 @font-face {
   font-family: "Soho";
   src: url("fonts/Soho.woff") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Light.woff") format("truetype");
 }
 
 @media screen and (max-width: 750px) {
