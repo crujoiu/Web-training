@@ -23,13 +23,19 @@ body {
 
 }
 
+#wrapper{
+    width: 180px;
+    height: 80px;
+    position: relative;
+    left: 35%;
+    top: 10%;
+}
+
 #logo {
     width: 40px;
     height: 38px;
     position: relative;
-    margin: 0px;
-    top: 30%;
-    left: 30%;
+    top: 35%;
 }
 
 .rectangle-logo {
@@ -63,27 +69,24 @@ body {
 }
 
 #aside-header #text {
-    width:117px;
-    height: 47px;
-    position: relative;
-    left: 46%;
-    top: -10%;
-    margin: 0px;
     font-family: 'Soho';
     font-size: 39px;
     z-index: 4;
-    
+    position: relative;
+    left: 14%;
+    top: -30%;
+    z-index: 4;
 }
 
 #aside-header #img {
-    position: relative;
-    margin: 0px;
-    left: 55%;
-    top: -5%;
     z-index: 1;
+    position: relative;
+    top: -37%;
+    left: 40%;
 }
 
 #aside-navigation{
+    /*display: block;*/
     width: 300px;
     height: 372px;
     background-color: #2f373b;
@@ -113,7 +116,6 @@ li a {
 li a:hover {
     background-color: #1ab5b3;
     color: white;
-    transition: all 0.15s linear 0s;
 }
 
 #aside-footer {
@@ -139,9 +141,9 @@ li a:hover {
 
 @media screen and (max-width: 750px) {
     .aside { 
-    float: none;
-    width: auto;
-    height: 300px;
+        float: none;
+        width: auto;
+        height: 300px;
     }
 
     #aside-header {
@@ -154,14 +156,18 @@ li a:hover {
         height: 87px;
     }
 
+    .vertical-nav {
+        display: none;
+    }
+
     #aside-footer {
         width: auto;
         height: 87px;
     }
 
     .section { 
-    float: none;
-    width: auto;
-    margin: 25px 0px 0px 0px;
+        float: none;
+        width: auto;
+        margin: 25px 0px 0px 0px;
     }
 }
