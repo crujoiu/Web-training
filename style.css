@@ -158,13 +158,31 @@ li a:hover {
     height: 55px;
 }
 
-#rights {
-    width: 182px;
-    height: 13px;
-}
-
 .social-icon {
     display: inline-block;
+    margin-right: 4px;
+}
+
+.social-icon img { 
+    width: 24px;
+    height: 24px;
+}
+
+#social-wrapper {
+    margin-left: 55px;
+}
+
+#rights {
+    width: 300px;
+    height: 25px;
+}
+
+#rights p {
+    color: #6b7072;
+    margin-left: 80px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 10px 87px;
 }
 
 .section {
