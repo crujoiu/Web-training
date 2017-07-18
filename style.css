@@ -94,7 +94,7 @@ body {
 
 #aside-navigation{
     width: 300px;
-    height: 388px;
+    height: auto;
     background-color: #2f373b;
 }
 
@@ -116,15 +116,15 @@ label {
     display: block;
 }
 
-ul {
-    list-style: none;
+#aside-navigation ul {
+    list-style-type: none;
     position: relative;
     margin: 0;
     padding: 0;
     background-color: #2f373b;
 }
 
-li a {
+#aside-navigation li a {
     color: white;
     display: block;
     font-family: 'Roboto',sans-serif;
@@ -137,7 +137,7 @@ li a {
     z-index: 99999;
 }
 
-li a:hover {
+#aside-navigation li a:hover {
     background-color: #1ab5b3;
     color: white;
 }
@@ -151,6 +151,57 @@ li a:hover {
 #filter {
     width: 300px;
     height: 193px;
+}
+
+#filter-wrapper {
+    position: relative;
+    margin-left: 209px;
+    margin-top: 15px;
+}
+
+#filter p {
+    width: 45px;
+    height: 20px;
+    margin: 0;
+    color: #1ab5b3;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    display: inline-block;
+}
+
+#filter-logo {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+}
+
+.rectangle-filter {
+    width: 7px;
+    height: 7px;
+    float: left;
+    margin: 1px;
+    background-color: #1ab5b3;
+}
+
+.filter-options {
+    font-size: 13px;
+    padding: 0 24px;
+    position: relative;
+    text-align: right;
+}
+
+.filter-options li {
+    list-style-type: none;
+}
+
+.filter-options li a {
+    color: #6b7072;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.filter-options li a:hover {
+    color: white;
 }
 
 #social {
@@ -226,12 +277,8 @@ li a:hover {
         display: block;
     }
 
-    ul {
-        margin-top: 15px;
-    }
-
-    li a {
-    text-align: center;
+    #aside-navigation li a {
+        text-align: center;
     }
 
     .vertical-nav {
@@ -248,7 +295,7 @@ li a:hover {
     }
 
     #social {
-        display: none;
+        width: 100%;
     }
 
     #rights {
