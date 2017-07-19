@@ -211,7 +211,7 @@ label {
 
 #social-wrapper {
     margin: 0;
-    padding: 12px 20px 13px 56px;
+    padding: 12px 38px 13px 38px;
 }
 
 .social-icon {
@@ -297,6 +297,7 @@ label {
 
     #social {
         width: 100%;
+        text-align: center;
     }
 
     #rights {
