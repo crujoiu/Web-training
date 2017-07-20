@@ -12,7 +12,7 @@ body {
 
 #container {
     overflow: hidden;
-    background-color: #cccccc;
+    background-color: #b4b7b8;
 }
 
 .aside {
@@ -246,20 +246,37 @@ label {
 }
 
 .column {
-    display: inline-block;
-    width: 50%;
+    width: 42%;
+    float: left;
     height: 1150px;
-    padding: 24px;
+    padding: 25px;
 }
-/*
+
+.column p {
+    text-justify: center;
+    padding-bottom: 20px;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(163,163,163,255);
+}
+
+.column h2 {
+    font-size: 24px;
+    font-family: 'Roboto-Thin', sans-serif;
+}
+
 #column-one {
-    
+    border-right: 1px solid black;
 }
 
-#column-two {
-
+#poster {
+    width: 100%;
+    position: relative;
+    height: 302px;
+    background-color: gray;
 }
-*/
+
 @font-face {
   font-family: "Soho";
   src: url("fonts/Soho.woff") format("truetype");
@@ -267,6 +284,11 @@ label {
 @font-face {
   font-family: "Roboto";
   src: url("fonts/Roboto-Light.woff") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("fonts/Roboto-Thin.woff") format("truetype");
 }
 
 @media screen and (max-width: 750px) {
@@ -300,6 +322,7 @@ label {
 
     .vertical-nav {
         display: none;
+        z-index: 9999;
     }
 
     #aside-footer {
@@ -314,6 +337,7 @@ label {
     #social {
         width: 100%;
         text-align: center;
+        z-index: 9999;
     }
 
     #rights {
@@ -322,5 +346,26 @@ label {
 
     .section {
         margin: 300px 25px 25px 25px;
+    }
+
+    .column {
+        width: auto;
+        float: none;
+    }
+
+    #column-one{
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #column-two{
+        display: none;
+    }
+
+    #column-one {
+        width: auto;
+        float: none;
+        border-right: none;
     }
 }
