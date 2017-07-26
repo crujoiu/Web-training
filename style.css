@@ -238,18 +238,12 @@ label {
 }
 
 .section {
+    display: flex;
     width: auto;
     height: 1200px;
     background-color: white;
     margin: 25px 25px 25px 325px;
     overflow: auto;
-}
-
-.column {
-    width: 42%;
-    float: left;
-    height: 1150px;
-    padding: 25px;
 }
 
 .column p {
@@ -267,7 +261,18 @@ label {
 }
 
 #column-one {
+    width: 50%;
+    float: left;
+    padding: 25px;
     border-right: 1px solid black;
+    overflow: auto;
+}
+
+#column-two {
+    width: 50%;
+    float: right;
+    padding: 25px;
+    overflow: auto;
 }
 
 #poster {
@@ -275,6 +280,32 @@ label {
     position: relative;
     height: 302px;
     background-color: gray;
+}
+
+.staff-container {
+    height: 450px;
+}
+.column h1 {
+    font-size: 24px;
+    font-family: 'Roboto-Thin', sans-serif;
+}
+
+.staff-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.staff-child {
+    width: 30%;
+    height: 180px;
+    margin: 8px;
+    background-color: gray;
+    text-align: center;
+}
+
+.staff-child:hover {
+    background-color: #2cb8b6;
 }
 
 @font-face {
