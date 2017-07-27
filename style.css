@@ -18,7 +18,7 @@ body {
 
 .aside {
     width: 300px;
-    height: 1250px;
+    height: auto;
     float: left;
     background-color: #242b2e;
 }
@@ -239,9 +239,10 @@ label {
 
 .section {
     display: flex;
+    flex: 1; /*IE10 and IE11 fix*/
     width: auto;
     float: right;
-    height: 1200px;
+    height: auto;
     background-color: white;
     margin: 25px 25px 25px 25px;
     overflow: auto;
@@ -263,17 +264,13 @@ label {
 
 #column-one {
     width: 50%;
-    float: left;
     padding: 25px;
     border-right: 1px solid black;
-    overflow: auto;
 }
 
 #column-two {
     width: 50%;
-    float: right;
     padding: 25px;
-    overflow: auto;
 }
 
 #poster {
