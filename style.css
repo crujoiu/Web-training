@@ -11,6 +11,7 @@ body {
 }
 
 #container {
+    display: flex;
     overflow: hidden;
     background-color: #b4b7b8;
 }
@@ -19,7 +20,6 @@ body {
     width: 300px;
     height: 1250px;
     float: left;
-    z-index: 1;
     background-color: #242b2e;
 }
 
@@ -143,7 +143,7 @@ label {
 }
 
 #aside-footer {
-    width: 300px;
+    /*width: 300px;*/
     height: 736px;
     background-color: #242b2e;
 }
@@ -240,9 +240,10 @@ label {
 .section {
     display: flex;
     width: auto;
+    float: right;
     height: 1200px;
     background-color: white;
-    margin: 25px 25px 25px 325px;
+    margin: 25px 25px 25px 25px;
     overflow: auto;
 }
 
@@ -324,13 +325,15 @@ label {
 
 @media screen and (max-width: 750px) {
     #container {
-        height: auto; 
-        overflow: hidden;
+        flex-flow: wrap;
+        height: auto;
     }
 
     .aside { 
+        display: flex;
+        flex-flow: wrap;
         width: 100%;
-        height: 275px;
+        height: auto;
     }
 
     #aside-header {
@@ -340,7 +343,6 @@ label {
 
     #aside-navigation {
         width: 100%;
-        height: auto;
     }
 
     label {
@@ -368,15 +370,10 @@ label {
     #social {
         width: 100%;
         text-align: center;
-        z-index: 9999;
     }
 
     #rights {
         display: none;
-    }
-
-    .section {
-        margin: 300px 25px 25px 25px;
     }
 
     .column {
