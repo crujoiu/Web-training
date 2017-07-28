@@ -306,6 +306,52 @@ label {
     background-color: #2cb8b6;
 }
 
+.pb-labels {
+  display: inline-block;
+  /* width: 600px; */
+  margin-top: 20px;
+}
+
+.pb-container {
+    width: 100%;
+}
+
+.label-one {
+  float: left;
+}
+
+.label-two {
+  float: right;
+}
+
+.bar {
+  /* width: 600px; */
+  height: 30px;
+  background: white;
+  border: 1px solid lightgray
+}
+
+.progress {
+  height: 30px;
+  background: gray;
+}
+
+.one {
+  width: 89%;
+}
+
+.two {
+  width: 97%;
+}
+
+.three {
+  width: 85%;
+}
+
+.four {
+  width: 75%;
+}
+
 @font-face {
   font-family: "Soho";
   src: url("fonts/Soho.woff") format("truetype");
