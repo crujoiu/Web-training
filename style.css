@@ -373,6 +373,10 @@ label {
         display: none;
     }
 
+    .section {
+        flex-flow: wrap;
+    }
+
     .column {
         width: auto;
         float: none;
@@ -384,10 +388,14 @@ label {
 }
 
 @media screen and (max-width: 1024px) {
+    .section {
+        flex-flow: wrap;
+    }
+    /*
     #column-two{
         display: none;
     }
-
+    */
     #column-one {
         width: auto;
         float: none;
