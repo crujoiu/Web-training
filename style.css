@@ -265,7 +265,7 @@ label {
 #column-one {
     width: 50%;
     padding: 25px;
-    border-right: 1px solid black;
+    border-right: 1px solid gray;
 }
 
 #column-two {
@@ -307,28 +307,20 @@ label {
 }
 
 .pb-labels {
-  display: inline-block;
-  /* width: 600px; */
-  margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .pb-container {
     width: 100%;
 }
 
-.label-one {
-  float: left;
-}
-
-.label-two {
-  float: right;
-}
-
 .bar {
-  /* width: 600px; */
   height: 30px;
   background: white;
-  border: 1px solid lightgray
+  /* border: 1px solid lightgray */
 }
 
 .progress {
@@ -437,11 +429,7 @@ label {
     .section {
         flex-flow: wrap;
     }
-    /*
-    #column-two{
-        display: none;
-    }
-    */
+
     #column-one {
         width: auto;
         float: none;
