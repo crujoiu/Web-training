@@ -261,13 +261,13 @@ label {
 
 #column-one {
     width: 50%;
-    padding: 25px;
+    padding: 25px 25px 0px 25px;
     border-right: 1px solid #e5e5e5;
 }
 
 #column-two {
     width: 50%;
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
 }
 
 #poster {
@@ -450,7 +450,7 @@ img {
         float: none;
     }
 
-    #column-one{
+    #column-one {
         border-right: none;
     }
 }
