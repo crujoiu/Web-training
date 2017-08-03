@@ -297,9 +297,11 @@ img {
 
 .staff-child {
     width: 30%;
+    height: 100%;
     margin: 0px 8px 8px 0px;
-    text-align: center;
-}
+    /*Circular crop*/
+    border-radius: 50%;
+}  
 
 .pb-labels {
     display: flex;
