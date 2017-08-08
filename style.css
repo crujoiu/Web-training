@@ -292,13 +292,14 @@ img {
 .staff-wrap{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .staff-child {
     background-image: url('img/assets/team1.jpg');
     background-position: center;
-    width: 30%;
+    background-size: cover;
+    width: 180px;
     height: 180px;
     margin: 0px 8px 8px 0px;
     /*Circular crop*/
